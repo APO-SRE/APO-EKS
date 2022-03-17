@@ -1,20 +1,15 @@
 # Terraform ----------------------------------------------------------------------------------------
 terraform {
-  required_version = ">= 1.1.5"
+  required_version = ">= 1.1.7"
 
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = ">= 3.74"
+      version = ">= 4.5"
     }
 
     kubernetes = {
-      version = "~> 2.7"
-    }
-
-    local = {
-      source = "hashicorp/local"
-      version = ">= 2.1"
+      version = "~> 2.8"
     }
 
     null = {
@@ -25,11 +20,6 @@ terraform {
     random = {
       source = "hashicorp/random"
       version = ">= 3.1"
-    }
-
-    template = {
-      source = "hashicorp/template"
-      version = ">= 2.2"
     }
   }
 }
